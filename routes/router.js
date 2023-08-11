@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/", (req, res) => {
     //testDatabaseConnection();
-    return res.render("signup");
+    return res.render("signin");
 });
 
 // async function testDatabaseConnection() {
