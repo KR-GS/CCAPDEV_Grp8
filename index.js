@@ -36,14 +36,15 @@ app.use(session({
 
 app.use('/static', express.static('public'));
 
-app.engine("hbs", exphbs.engine({
-    extname: "hbs", 
-    helpers: {
-        formatDate: function(date) {
-            return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
-        }
-    }
-}));
+// app.engine("hbs", exphbs.engine({
+//     extname: "hbs", 
+//     helpers: {
+//         formatDate: function(date) {
+//             return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+//         }
+//     }
+// }));
+
 app.set("view engine", "hbs");
 app.set("views", "./src/views");
 
